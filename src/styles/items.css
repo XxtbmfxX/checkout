@@ -1,0 +1,84 @@
+.FormItems {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 12px;
+  padding: 10px;
+  width: 80%;
+  /* min-width: 350px; */
+  max-width: 380px;
+}
+
+.FormItems h3 {
+  font-size: 1.2rem;
+  margin-block: 0px;
+}
+
+.Item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.Item_data {
+  width: 40%;
+  margin-left: 20px;
+}
+
+.Item_image {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+}
+
+.Item_data-price {
+  margin-bottom: 30px;
+}
+
+.Item_data-price span:nth-child(1) {
+  font-size: 1.4rem;
+  color: var(--interaction-color);
+}
+.Item_data-price span:nth-child(2) {
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+.Item_ammount {
+  border: 2px solid var(--items-card-color);
+  border-radius: 12px;
+  padding: 10px 5px;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 90;
+}
+
+.Items_ammount {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 10px;
+  border-top: 1px solid wheat;
+}
+.Items_ammount small {
+  font-size: 1.4rem;
+}
+
+.Item_ammount span {
+  background-color: var(--input-color);
+  border-radius: 5px;
+  padding: 1px 5px;
+  margin: 0 5px;
+}
+
+.Item_ammount span:hover {
+  cursor: pointer;
+}
+.Item_ammount span:active {
+  background-color: var(--bg-color);
+}
+
+.Total {
+  margin-top: 90px;
+}

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+:root {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 62.5%;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --input-color: #828282;
+  --items-card-color: #f2f2f2;
+  --interaction-color: #f2994a;
+  --moreLess-color: #e0e0e0;
+  --bg-color: #333333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.checkbox {
+  display: flex;
+}
+.checkbox input {
+  margin-inline: 10px;
+}
+
+.Header {
+  width: 100%;
+  text-align: start;
+}
+
+.Main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-symbols-outlined {
+  display: flex;
+  align-items: center;
+  padding: none;
+  border: none;
+  height: 30px;
+  width: 30px;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 20;
+}
+
+.Footer small,
+a {
+  font-size: 1.5rem;
+  color: var(--input-color);
+}
+.Footer small,
+a:hover {
+  color: var(--items-card-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #app,
+  .Main {
+    align-items: center;
+  }
+  .Header h1 {
+    margin-left: 230px !important;
+    margin-top: 40px !important;
+    width: 80% !important;
+  }
+  .FormItems {
+    margin-bottom: 330px;
+    margin-inline: 110px 240px;
+  }
+  .Main {
+    flex-direction: row-reverse;
+  }
+  form {
+    margin-left: 240px;
+  }
+  form span {
+    width: 100%;
+  }
+  label {
+    margin: 10px 0px;
+  }
+}
